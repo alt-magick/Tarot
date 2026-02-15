@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Complete Tarot Readings</title>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+body {
+    font-family: 'Inter', sans-serif;
+    background: linear-gradient(135deg, #1e1b2e, #2c2445);
+    margin: 0;
+    padding: 30px 20px;
+    color: #f2f2f2;
+}
+h1 {
+    text-align: center;
+    font-family: 'Cinzel', serif;
+    font-size: 38px;
+    letter-spacing: 2px;
+    color: #f0d878;
+    margin-bottom: 30px;
+    text-shadow: 0 0 10px rgba(240,216,120,0.6);
+}
+h2 {
+    margin-top: 50px;
+    font-family: 'Cinzel', serif;
+    font-weight: 600;
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+    padding-bottom: 8px;
+    color: #e6d28a;
+}
+.card {
+    background: rgba(255,255,255,0.05);
+    margin: 10px 0;
+    border-radius: 8px;
+    overflow: hidden;
+    border: 1px solid rgba(255,255,255,0.1);
+    transition: all 0.3s ease;
+}
+.card:hover { box-shadow: 0 0 15px rgba(240,216,120,0.3); }
+.card-title {
+    padding: 14px 16px;
+    cursor: pointer;
+    font-weight: 500;
+    background: rgba(255,255,255,0.08);
+    transition: background 0.3s ease;
+}
+.card-title:hover { background: rgba(255,255,255,0.15); }
+.card-content {
+    max-height: 0;
+    overflow: hidden;
+    padding: 0 16px;
+    transition: max-height 0.5s ease, padding 0.4s ease, opacity 0.4s ease;
+    opacity: 0;
+    line-height: 1.6;
+    font-size: 15px;
+}
+.card.active .card-content {
+    max-height: 300px;
+    padding: 14px 16px;
+    opacity: 1;
+}
+@media (max-width: 600px) {
+    h1 { font-size: 28px; }
+    body { padding: 20px 12px; }
+}
+</style>
+<script>
+function toggleCard(element) {
+    const card = element.parentElement;
+    const allCards = document.querySelectorAll('.card');
+    allCards.forEach(c => { if (c !== card) c.classList.remove('active'); });
+    card.classList.toggle('active');
+}
+</script>
+</head>
+<body>
+<h1>✧ Tarot Readings ✧</h1>
+
+<div class="container">
+
+<h2>Major Arcana</h2>
+<div class="card"><div class="card-title" onclick="toggleCard(this)">The Fool</div><div class="card-content">You may feel pressure to decide, but don’t rush. Trust your judgment as you step into something new.</div></div>
+<div class="card"><div class="card-title" onclick="toggleCard(this)">The Magician</div><div class="card-content">As you move forward, your dedication and willingness to help others will bring pride and steady progress.</div></div>
+<div class="card"><div class="card-title" onclick="toggleCard(this)">The High Priestess</div><div class="card-content">Patience is especially important in love; allow feelings to develop naturally.</div></div>
+<div class="card"><div class="card-title" onclick="toggleCard(this)">The Empress</div><div class="card-content">Make the most of what you have—your financial efforts are beginning to show results.</div></div>
+<div class="card"><div class="card-title" onclick="toggleCard(this)">The Emperor</div><div class="card-content">If tension appears in a close relationship, calm communication will restore balance.</div></div>
+<div class="card"><div class="card-title" onclick="toggleCard(this)">The Hierophant</div><div class="card-content">Your practical wisdom with money attracts opportunity, but saving what you have keeps you secure.</div></div>
+<div class="card"><div class="card-title" onclick="toggleCard(this)">The Lovers</div><div class="card-content">Avoid jumping to conclusions; change can happen peacefully without conflict.</div></div>
+<div class="card"><div class="card-title" onclick="toggleCard(this)">The Chariot</div><div class="card-content">A calmer phase is approaching, giving you space to regain clarity and direction.</div></div>
+<div class="card"><div class="card-title" onclick="toggleCard(this)">Strength</div><div class="card-content">In this steadiness, your generosity shines—just avoid expecting too much in return.</div></div>
+<div class="card"><div class="card-title" onclick="toggleCard(this)">The Hermit</div><div class="card-content">Reflect carefully on how you spend your energy and focus on what supports your long-term goals.</div></div>
+<div class="card"><div class="card-title" onclick="toggleCard(this)">Wheel of Fortune</div><div class="card-content">A new relationship or meaningful restart is possible; be ready to commit sincerely.</div></div>
+<div class="card"><div class="card-title" onclick="toggleCard(this)">Justice</div><div class="card-content">You can reason through challenges—slow, steady progress brings success.</div></div>
+<div class="card"><div class="card-title" onclick="toggleCard(this)">The Hanged Man</div><div class="card-content">Financial security strengthens as you take initiative and ask for help when needed.</div></div>
+<div class="card"><div class="card-title" onclick="toggleCard(this)">Death</div><div class="card-content">Trust your abilities more deeply; transformation is guiding you forward.</div></div>
+<div class="card"><div class="card-title" onclick="toggleCard(this)">Temperance</div><div class="card-content">Sudden changes may arise, but flexibility allows you to adapt wisely.</div></div>
+<div class="card"><div class="card-title" onclick="toggleCard(this)">The Devil</div><div class="card-content">Your independence is strong—hold your principles while remaining open to connection.</div></div>
+<div class="card"><div class="card-title" onclick="toggleCard(this)">The Tower</div><div class="card-content">Others may look to you for leadership; set a steady example.</div></div>
+<div class="card"><div class="card-title" onclick="toggleCard(this)">The Star</div><div class="card-content">Hard work continues, yet completion brings satisfaction and renewed hope.</div></div>
+<div class="card"><div class="card-title" onclick="toggleCard(this)">The Moon</div><div class="card-content">Even during uncertainty, love for family provides grounding and joy.</div></div>
+<div class="card"><div class="card-title" onclick="toggleCard(this)">The Sun</div><div class="card-content">A new opportunity appears—stay observant and ready to act.</div></div>
+<div class="card"><div class="card-title" onclick="toggleCard(this)">Judgement</div><div class="card-content">You are ready for meaningful change; explore new goals with confidence.</div></div>
+<div class="card"><div class="card-title" onclick="toggleCard(this)">The World</div><div class="card-content">Financial discipline and steady effort now build lasting security and completion.</div></div>
+
+<h2>Cups</h2>
+<!-- Cups 14 cards -->
+<div class="card"><div class="card-title" onclick="toggleCard(this)">Ace of Cups</div><div class="card-content">Emotional matters may feel complicated; pause before speaking and think clearly.</div></div>
+<div class="card"><div class="card-title" onclick="toggleCard(this)">Two of Cups</div><div class="card-content">Restlessness signals growth—small adjustments refresh your motivation.</div></div>
+<div class="card"><div class="card-title" onclick="toggleCard(this)">Three of Cups</div><div class="card-content">Something meaningful is beginning, but thoughtful decisions shape its future.</div></div>
+<div class="card"><div class="card-title" onclick="toggleCard(this)">Four of Cups</div><div class="card-content">Accept life as it unfolds and take responsibility for your role within it.</div></div>
+<div class="card"><div class="card-title" onclick="toggleCard(this)">Five of Cups</div><div class="card-content">Even if you feel separate at times, life is quietly guiding you forward.</div></div>
+<div class="card"><div class="card-title" onclick="toggleCard(this)">Six of Cups</div><div class="card-content">Clear misunderstandings quickly; calm communication prevents tension.</div></div>
+<div class="card"><div class="card-title" onclick="toggleCard(this)">Seven of Cups</div><div class="card-content">Shift focus from personal wants to shared needs—wise money choices support harmony.</div></div>
+<div class="card"><div class="card-title" onclick="toggleCard(this)">Eight of Cups</div><div class="card-content">Challenges may test you, yet calm confidence keeps you steady.</div></div>
+<div class="card"><div class="card-title" onclick="toggleCard(this)">Nine of Cups</div><div class="card-content">Work may feel heavy, but accepting help moves you closer to success.</div></div>
+<div class="card"><div class="card-title" onclick="toggleCard(this)">Ten of Cups</div><div class="card-content">Financial awareness becomes necessary; budgeting restores peace.</div></div>
+<div class="card"><div class="card-title" onclick="toggleCard(this)">Page of Cups</div><div class="card-content">Harmony deepens when you support family with sincerity.</div></div>
+<div class="card"><div class="card-title" onclick="toggleCard(this)">Knight of Cups</div><div class="card-content">Freedom and happiness surround your relationships, though balance prevents overextension.</div></div>
+<div class="card"><div class="card-title" onclick="toggleCard(this)">Queen of Cups</div><div class="card-content">You can handle more responsibility than you realize—break tasks into smaller steps.</div></div>
+<div class="card"><div class="card-title" onclick="toggleCard(this)">King of Cups</div><div class="card-content">Major emotional shifts mark a fresh start; accept what arrives with openness.</div></div>
+
+<h2>Wands</h2>
+<!-- Wands 14 cards -->
+<div class="card"><div class="card-title" onclick="toggleCard(this)">Ace of Wands</div><div class="card-content">Take action on your ideas now; responsibility builds stability for future joy.</div></div>
+<div class="card"><div class="card-title" onclick="toggleCard(this)">Two of Wands</div><div class="card-content">Money earned through hard work deserves careful appreciation and wise use.</div></div>
+<div class="card"><div class="card-title" onclick="toggleCard(this)">Three of Wands</div><div class="card-content">If progress feels stalled, use this pause to refine your plans.</div></div>
+<div class="card"><div class="card-title" onclick="toggleCard(this)">Four of Wands</div><div class="card-content">Doubts in relationships are temporary—peace restores connection.</div></div>
+<div class="card"><div class="card-title" onclick="toggleCard(this)">Five of Wands</div><div class="card-content">You adapt situations to your advantage, but remain mindful of others.</div></div>
+<div class="card"><div class="card-title" onclick="toggleCard(this)">Six of Wands</div><div class="card-content">Stay open to financial opportunities and avoid waste.</div></div>
+<div class="card"><div class="card-title" onclick="toggleCard(this)">Seven of Wands</div><div class="card-content">Cooperation at home or work reduces stress and improves outcomes.</div></div>
+<div class="card"><div class="card-title" onclick="toggleCard(this)">Eight of Wands</div><div class="card-content">Love may be asking for seriousness—consider deeper commitment.</div></div>
+<div class="card"><div class="card-title" onclick="toggleCard(this)">Nine of Wands</div><div class="card-content">Helping others and following your conscience keeps you strong.</div></div>
+<div class="card"><div class="card-title" onclick="toggleCard(this)">Ten of Wands</div><div class="card-content">Avoid unnecessary rebellion; talk through change calmly.</div></div>
+<div class="card"><div class="card-title" onclick="toggleCard(this)">Page of Wands</div><div class="card-content">Financial worries may surface, yet optimism shifts perspective.</div></div>
+<div class="card"><div class="card-title" onclick="toggleCard(this)">Knight of Wands</div><div class="card-content">Emotional balance ensures wiser choices and steady reactions.</div></div>
+<div class="card"><div class="card-title" onclick="toggleCard(this)">Queen of Wands</div><div class="card-content">You have options in love—choose depth and hope over impulse.</div></div>
+<div class="card"><div class="card-title" onclick="toggleCard(this)">King of Wands</div><div class="card-content">New responsibilities approach; handle them carefully and gain trust.</div></div>
+
+<h2>Swords</h2>
+<!-- Swords 14 cards -->
+<div class="card"><div class="card-title" onclick="toggleCard(this)">Ace of Swords</div><div class="card-content">Let go of outdated plans; flexibility opens better paths.</div></div>
+<div class="card"><div class="card-title" onclick="toggleCard(this)">Two of Swords</div><div class="card-content">Financial organization matters—small details create stability.</div></div>
+<div class="card"><div class="card-title" onclick="toggleCard(this)">Three of Swords</div><div class="card-content">Quick thinking helps you navigate uncomfortable situations.</div></div>
+<div class="card"><div class="card-title" onclick="toggleCard(this)">Four of Swords</div><div class="card-content">Success requires patience and cooperation; plans take time.</div></div>
+<div class="card"><div class="card-title" onclick="toggleCard(this)">Five of Swords</div><div class="card-content">Creativity and diligence earn respect when authority is used wisely.</div></div>
+<div class="card"><div class="card-title" onclick="toggleCard(this)">Six of Swords</div><div class="card-content">Relationships require balance; honesty restores fairness.</div></div>
+<div class="card"><div class="card-title" onclick="toggleCard(this)">Seven of Swords</div><div class="card-content">Pause before reacting to criticism—valuable lessons may be hidden within it.</div></div>
+<div class="card"><div class="card-title" onclick="toggleCard(this)">Eight of Swords</div><div class="card-content">Focus on what you can control today; small steps rebuild confidence.</div></div>
+<div class="card"><div class="card-title" onclick="toggleCard(this)">Nine of Swords</div><div class="card-content">Time feels limited, but seeking help allows progress.</div></div>
+<div class="card"><div class="card-title" onclick="toggleCard(this)">Ten of Swords</div><div class="card-content">Your goals are steadily forming—avoid comparison.</div></div>
+<div class="card"><div class="card-title" onclick="toggleCard(this)">Page of Swords</div><div class="card-content">Follow your principles while adapting where needed.</div></div>
+<div class="card"><div class="card-title" onclick="toggleCard(this)">Knight of Swords</div><div class="card-content">Remember equality within family and partnership; dominance disrupts harmony.</div></div>
+<div class="card"><div class="card-title" onclick="toggleCard(this)">Queen of Swords</div><div class="card-content">Anxiety can guide you toward what truly matters—avoid self-centered choices.</div></div>
+<div class="card"><div class="card-title" onclick="toggleCard(this)">King of Swords</div><div class="card-content">Ambition rises, and financial opportunities or promotions may soon appear.</div></div>
+
+<h2>Pentacles</h2>
+<!-- Pentacles 14 cards -->
+<div class="card"><div class="card-title" onclick="toggleCard(this)">Ace of Pentacles</div><div class="card-content">Take initiative with money and ask for guidance when necessary.</div></div>
+<div class="card"><div class="card-title" onclick="toggleCard(this)">Two of Pentacles</div><div class="card-content">Helping others and following your conscience brings fulfillment.</div></div>
+<div class="card"><div class="card-title" onclick="toggleCard(this)">Three of Pentacles</div><div class="card-content">Encourage someone close—your support makes a difference.</div></div>
+<div class="card"><div class="card-title" onclick="toggleCard(this)">Four of Pentacles</div><div class="card-content">Obstacles may feel overwhelming, but reassessment reveals solutions.</div></div>
+<div class="card"><div class="card-title" onclick="toggleCard(this)">Five of Pentacles</div><div class="card-content">Approach romance thoughtfully; true love may be nearer than expected.</div></div>
+<div class="card"><div class="card-title" onclick="toggleCard(this)">Six of Pentacles</div><div class="card-content">Release old burdens and cooperate to move forward.</div></div>
+<div class="card"><div class="card-title" onclick="toggleCard(this)">Seven of Pentacles</div><div class="card-content">Express individuality while listening to your intuition.</div></div>
+<div class="card"><div class="card-title" onclick="toggleCard(this)">Eight of Pentacles</div><div class="card-content">Reason through problems patiently—steady effort brings victory.</div></div>
+<div class="card"><div class="card-title" onclick="toggleCard(this)">Nine of Pentacles</div><div class="card-content">Feelings of separation are temporary; life moves in new directions.</div></div>
+<div class="card"><div class="card-title" onclick="toggleCard(this)">Ten of Pentacles</div><div class="card-content">Financial opportunities are ahead—invest wisely and avoid waste.</div></div>
+<div class="card"><div class="card-title" onclick="toggleCard(this)">Page of Pentacles</div><div class="card-content">Cooperation reduces stress and improves shared outcomes.</div></div>
+<div class="card"><div class="card-title" onclick="toggleCard(this)">Knight of Pentacles</div><div class="card-content">Have the postponed conversation; calm clarity transforms results.</div></div>
+<div class="card"><div class="card-title" onclick="toggleCard(this)">Queen of Pentacles</div><div class="card-content">You are ready for expansion and new interests.</div></div>
+<div class="card"><div class="card-title" onclick="toggleCard(this)">King of Pentacles</div><div class="card-content">Balance your responsibilities carefully—trust from others confirms your growth and stability.</div></div>
+
+</div> <!-- end container -->
+</body>
+</html>
