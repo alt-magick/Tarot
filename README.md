@@ -7,6 +7,7 @@ Online at: https://alt-magick.github.io/Tarot/tarot.html
 <br>
 
 ---
+<br>
 
 Major Arcana
 
@@ -79,6 +80,7 @@ Major Arcana
 
 
 ---
+<br>
 
 Cups
 
@@ -127,6 +129,7 @@ Cups
 
 
 ---
+<br>
 
 Wands
 
@@ -175,6 +178,7 @@ Wands
 
 
 ---
+<br>
 
 Swords
 
@@ -223,6 +227,7 @@ Swords
 
 
 ---
+<br>
 
 Pentacles
 
