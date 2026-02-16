@@ -30,30 +30,17 @@ h1 {
     transform-origin: center;
     text-align: center;
     letter-spacing: 2px;
-    /* Gradient text for a magical look */
-    background: linear-gradient(45deg, #f0d878, #f8c84b, #ffd700);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    position: relative;
-    /* Soft glowing shadow */
-    text-shadow: 0 0 5px rgba(240,216,120,0.8), 
-                 0 0 10px rgba(240,216,120,0.5);
+    color: #f0d878;                   /* starting gold */
     line-height: 1.2;
     word-wrap: break-word;
     max-width: 90%;
-    animation: glow 2s infinite alternate; /* subtle shimmer animation */
+    animation: goldPulse 2s infinite alternate; /* animate gold color */
 }
 
-/* Glow animation */
-@keyframes glow {
-    0% {
-        text-shadow: 0 0 3px rgba(240,216,120,0.6),
-                     0 0 6px rgba(240,216,120,0.4);
-    }
-    100% {
-        text-shadow: 0 0 3px rgba(250,226,130,0.8),
-                     0 0 6px rgba(250,226,130,0.6);
-    }
+/* Animation from gold to bright gold */
+@keyframes goldPulse {
+    0%   { color: #f0d878; }   /* normal gold */
+    100% { color: #fff18f; }   /* brighter gold */
 }
 
 /* Responsive for mobile */
@@ -61,9 +48,9 @@ h1 {
     h1 {
         font-size: 40px;
         transform: scale(1.3);
-        animation: glow 2s infinite alternate;
     }
 }
+
 h2 {
     margin-top: 50px;
     font-family: 'Cinzel', serif;
