@@ -14,10 +14,27 @@ body {
     color: #f2f2f2;
 }
 h1 {
-    font-size: 50px; /* a reasonable base */
-    display: inline-block;
-    transform: scale(1.5); /* visually enlarges heading */
-    transform-origin: center;
+    font-family: 'Cinzel', serif;       /* elegant serif font */
+    font-size: 50px;                     /* base size */
+    display: inline-block;               /* needed for transform */
+    transform: scale(1.5);               /* enlarge visually */
+    transform-origin: center;            /* scale from center */
+    text-align: center;                  /* center the heading */
+    letter-spacing: 2px;                 /* spacing between letters */
+    color: #f0d878;                      /* golden text */
+    margin-bottom: 20px;
+    text-shadow: 0 0 15px rgba(240,216,120,0.7); /* glowing effect */
+    line-height: 1.2;                    /* spacing between lines */
+    word-wrap: break-word;               /* wrap long text if needed */
+    max-width: 90%;                      /* prevents overflow on small screens */
+}
+
+/* Responsive scaling for mobile */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 40px;                 /* smaller base on mobile */
+        transform: scale(1.3);           /* slightly less scale */
+    }
 }
 h2 {
     margin-top: 50px;
