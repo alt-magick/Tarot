@@ -13,27 +13,35 @@ body {
     padding: 30px 20px;
     color: #f2f2f2;
 }
+
+.header-container {
+    display: flex;
+    justify-content: center;   /* center horizontally */
+    align-items: center;       /* center vertically if needed */
+    flex-direction: column;    /* stack children vertically */
+    margin-bottom: 20px;       /* spacing below header */
+}
+
 h1 {
     font-family: 'Cinzel', serif;       /* elegant serif font */
     font-size: 50px;                     /* base size */
-    display: inline-block;               /* needed for transform */
-    transform: scale(1.5);               /* enlarge visually */
+    display: inline-block;               /* required for transform */
+    transform: scale(1.5);               /* visually enlarges heading */
     transform-origin: center;            /* scale from center */
-    text-align: center;                  /* center the heading */
+    text-align: center;                  /* center lines of text */
     letter-spacing: 2px;                 /* spacing between letters */
-    color: #f0d878;                      /* golden text */
-    margin-bottom: 20px;
+    color: #f0d878;                      /* golden color */
     text-shadow: 0 0 15px rgba(240,216,120,0.7); /* glowing effect */
     line-height: 1.2;                    /* spacing between lines */
     word-wrap: break-word;               /* wrap long text if needed */
-    max-width: 90%;                      /* prevents overflow on small screens */
+    max-width: 90%;                      /* prevent overflow on small screens */
 }
 
 /* Responsive scaling for mobile */
 @media (max-width: 600px) {
     h1 {
-        font-size: 40px;                 /* smaller base on mobile */
-        transform: scale(1.3);           /* slightly less scale */
+        font-size: 40px;                 /* smaller base for mobile */
+        transform: scale(1.3);           /* slightly smaller scale */
     }
 }
 h2 {
@@ -93,7 +101,7 @@ button:hover {
     transform: scale(1.05);
 }
 @media (max-width: 600px) {
-    h1 { font-size: 28px; }
+    h1 { font-size: 60px; }
     body { padding: 20px 12px; }
 }
 </style>
