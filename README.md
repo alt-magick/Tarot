@@ -13,10 +13,6 @@ Online at: https://alt-magick.github.io/Tarot/tarot.html
 
 ## Major Arcana
 
-# 🔮 Tarot Readings
-
-## Major Arcana
-
 The Fool<br>
 
 Your future is bright and full of possibility.
