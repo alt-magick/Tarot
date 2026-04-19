@@ -35,7 +35,7 @@ Let go of what you cannot change.
 
 **The Hierophant**<br>
 
-Action will bring your goals closer.
+Action brings your goals closer.
 
 **The Lovers**<br>
 
